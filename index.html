@@ -6,26 +6,32 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <h1>Pixel Art Maker</h1>
+<body class="container">
+    <header>
+        <img class="img-logo" src="img/logo.png" alt="Logo LF">
+        <h1>Pixel Art Maker</h1>
+    </header>
+    <main>
+        <h2>Choose Grid Size</h2>
+        <form id="sizePicker">
+            Grid Height:
+            <input type="number" id="inputHeight" name="height" min="1" value="1">
+            Grid Width:
+            <input type="number" id="inputWidth" name="width" min="1" value="1">
+            <button type="button" id="gridSubmit">Make grid!</button>
+        </form>
 
-    <h2>Choose Grid Size</h2>
-    <form id="sizePicker">
-        Grid Height:
-        <input type="number" id="inputHeight" name="height" min="1" value="1">
-        Grid Width:
-        <input type="number" id="inputWidth" name="width" min="1" value="1">
-        <button type="button" id="gridSubmit">Make grid!</button>
-    </form>
+        <h2>Pick A Color</h2>
+        <input type="color" id="colorPicker">
 
-    <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
-
-    <h2>Design Canvas</h2>
-    <table id="pixelCanvas">
-        <!--This grid will filled dinamicaly-->
-    </table>
-
+        <h2>Design Canvas</h2>
+        <table id="pixelCanvas">
+            <!--This grid will filled dinamicaly-->
+        </table>
+    </main>
+    <footer>
+        <p>Made with<span> Heart HERE </span> and <span> Coffee Icon HERE </span> by Lucas Felipe</p>
+    </footer>
     <script src="js/designs.js"></script>
 </body>
 </html>

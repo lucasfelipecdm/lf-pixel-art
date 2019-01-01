@@ -1,5 +1,22 @@
 body {
     text-align: center;
+    width: 100%;
+}
+
+.container {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+header {
+    display: block;
+}
+
+.img-logo {
+    margin: 15px auto;
+    width: 68px;
+    height: 68px;
 }
 
 h1 {
@@ -42,4 +59,8 @@ input[type=number] {
 button {
     height: 40xp;
     width: 120px;
+}
+
+footer {
+    display: block;
 }
