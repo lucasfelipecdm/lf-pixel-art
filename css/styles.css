@@ -1,4 +1,5 @@
 body {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     width: 100%;
     background: white url('../img/background.jpg');
@@ -6,14 +7,15 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
 }
 
 .container {
     width: 90%;
     text-align: center;
     margin: auto;
-    background: rgba(203, 152, 222, 0.8);
-    color: white;
+    background: rgba(203, 152, 222, 0.6);
+    box-shadow: 0 0 10px 5px rgba(30, 30, 30, 0.8);
 }
 
 header {
@@ -30,6 +32,7 @@ h1 {
     font-family: Monoton;
     font-size: 70px;
     margin: 0.2em;
+    text-shadow: 2px 2px 10px rgba(30, 30, 30, 0.8);
 }
 
 h2 {
@@ -41,12 +44,14 @@ h2:first-of-type {
 }
 
 .pixelCanvasDiv {
+    border-radius: 5px;
     padding: calc(5% - 20px);
     margin: 0 5%;
     border: 1px solid black;
     min-width: 400px;
     min-height: 400px;
-    background: white;
+    background: white;    
+    box-shadow: 0 0 10px 5px rgba(30, 30, 30, 0.8);
 }
 
 table,
@@ -68,15 +73,57 @@ td {
     width: 20px;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 input[type=number] {
-    width: 6em;
+    border: 1px solid white;
+    margin-top: 3px;
+    border-radius: 5px;
+    width: 40px;
+    transition: all ease 0.4s;
+}
+
+input[type=number]:focus {
+    border: 1px solid #6b2a99;
+    transition: all ease 0.4s;
+    width: 100px;
+}
+
+input[type=color] {
+    background: transparent;
+    width: 120px;
+    height: 15px;
+    border: none;    
+    transition: all ease 0.4s;
+}
+
+input[type=color]:focus {
+    width: 40px;
+    transition: all ease 0.4s;
 }
 
 button {
-    height: 40xp;
-    width: 120px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid rgba(30, 30, 30, 0.8);
+    box-shadow: 0 0 3px rgba(30, 30, 30, 0.8);
+    transition: all ease 0.4s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 1px solid #6b2a99;
+    box-shadow: 0 0 10px rgba(30, 30, 30, 0.8);
+    transition: all ease 0.4s;
 }
 
 footer {
+    margin-top: 40px;
     display: block;
 }

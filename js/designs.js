@@ -20,7 +20,6 @@ function makeGrid() {
 
 function pickColor() {
     color = $('#colorPicker').val();
-    return color;
 }
 
 function paintPixel(pixel){

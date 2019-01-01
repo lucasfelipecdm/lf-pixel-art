@@ -4,6 +4,7 @@
     <title>Pixel Art Maker!</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -15,15 +16,17 @@
         <main>
             <h2>Choose Grid Size</h2>
             <form id="sizePicker">
-                Grid Height:
+                <span>Grid Height:</span>
                 <input type="number" id="inputHeight" name="height" min="1" value="1">
-                Grid Width:
+                <span>Grid Width:</span>
                 <input type="number" id="inputWidth" name="width" min="1" value="1">
-                <button type="button" id="gridSubmit">Make grid!</button>
+                <p>
+                    <button type="button" id="gridSubmit">Draw the grid!</button>
+                </p>
             </form>
 
             <h2>Pick A Color</h2>
-            <input type="color" id="colorPicker">
+            <input type="color" id="colorPicker" value="#6b2a99">
 
             <h2>Design Canvas</h2>
             <div class="pixelCanvasDiv">
@@ -33,7 +36,7 @@
             </div>
         </main>
         <footer>
-            <p>Made with<span> Heart HERE </span> and <span> Coffee Icon HERE </span> by Lucas Felipe</p>
+            <p>Made with<span> &#9825 </span> and <span> &#9749 </span> by Lucas Felipe</p>
         </footer>
     </div>
     <script src="js/designs.js"></script>
