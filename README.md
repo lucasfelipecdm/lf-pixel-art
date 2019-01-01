@@ -1,16 +1,17 @@
 # Pixel Art Maker Project
 
-## Table of Contents
+## Description
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+This is a extra project of front-end web developer nanodegree.
 
 ## Instructions
 
-To get started, open `designs.js` and start building out the app's functionality.
+To use the LF PixelArtMaker tool, you just need download this repo, extract the .zip file, and open the index.html in any browser you have installed.
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+## How this feature works
 
-## Contributing
+* First choose the pixel canvas size, selecting the height and width grid.
+* Then select a color to paint the pixel, you can change the color any time you want.
+* Now you just need be creative.
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+Have fun!

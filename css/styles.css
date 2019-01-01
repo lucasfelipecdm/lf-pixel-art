@@ -70,7 +70,8 @@ tr {
 }
 
 td {
-    width: 20px;
+    width: 20px;    
+    cursor: url('../img/paint-cursor.png'), auto;
 }
 
 input:focus,
