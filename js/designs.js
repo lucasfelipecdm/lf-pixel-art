@@ -5,6 +5,7 @@
 
 let gridHeight = 0;
 let gridWidth = 0;
+let color = null;
 
 function makeGrid() {
     gridHeight = $('#inputHeight').val();
@@ -17,7 +18,22 @@ function makeGrid() {
     }
 }
 
+function pickColor() {
+    color = $('#colorPicker').val();
+    return color;
+}
+
+function paintPixel(pixel){
+    $(pixel).on('click', function(){
+        pickColor();
+        $(this).css('background-color', color);
+    })
+}
+
 $('#gridSubmit').on('click', function(){
     $('#pixelCanvas').html('');
     makeGrid();
+    $('td').each(function (){
+        paintPixel(this);
+    })
 })
