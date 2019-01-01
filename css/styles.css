@@ -1,12 +1,19 @@
 body {
     text-align: center;
     width: 100%;
+    background: white url('../img/background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {
-    width: 70%;
+    width: 90%;
     text-align: center;
     margin: auto;
+    background: rgba(203, 152, 222, 0.8);
+    color: white;
 }
 
 header {
@@ -14,9 +21,9 @@ header {
 }
 
 .img-logo {
-    margin: 15px auto;
-    width: 68px;
-    height: 68px;
+    margin-top: 15px;
+    width: 96px;
+    height: 96px;
 }
 
 h1 {
@@ -33,6 +40,15 @@ h2:first-of-type {
     margin-top: 0.5em;
 }
 
+.pixelCanvasDiv {
+    padding: calc(5% - 20px);
+    margin: 0 5%;
+    border: 1px solid black;
+    min-width: 400px;
+    min-height: 400px;
+    background: white;
+}
+
 table,
 tr,
 td {
@@ -41,7 +57,7 @@ td {
 
 table {
     border-collapse: collapse;
-    margin: 0 auto;
+    margin: auto;
 }
 
 tr {
