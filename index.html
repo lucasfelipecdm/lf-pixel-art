@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Pixel Art Maker!</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="css/styles.css">
@@ -16,9 +15,9 @@
         <main>
             <h2>Choose Grid Size</h2>
             <form id="sizePicker">
-                <span>Grid Height:</span>
+                <label for="inputHeight">Grid Height:</label>
                 <input type="number" id="inputHeight" name="height" min="1" value="1">
-                <span>Grid Width:</span>
+                <label for="inputWidth">Grid Width:</label>
                 <input type="number" id="inputWidth" name="width" min="1" value="1">
                 <p>
                     <button type="button" id="gridSubmit">Draw the grid!</button>
@@ -39,6 +38,7 @@
             <p>Made with<span> &#9825 </span> and <span> &#9749 </span> by Lucas Felipe</p>
         </footer>
     </div>
-    <script src="js/designs.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/designs.js"></script> 
 </body>
 </html>
